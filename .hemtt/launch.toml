@@ -1,21 +1,17 @@
 [default]
 workshop = [
-    "3499977893",
-    "1751569185"
-]
-presets = [
-    "Selkie_2025_09_10.html",
-]
-
-[antistasi]
-extends = "default"
-presets = [
-    "amy_antistasi_20250905.html",
+    "3499977893", # ADT
+    "1751569185", # Pythia
+    "1923321700", # O&T Expansion Eden
+    "463939057", # ace
+    "450814997", # CBA
+    "2020940806", # KAM
+    "623475643" # 3DEN Enhanced
 ]
 
 [eden]
 extends = "default"
-mission = "addons\\missions\\Selkie_FiringRange.Stratis"
+mission = "addons\\missions\\AFL_FiringRange.Stratis"
 
 [pbo]
 extends = "default"

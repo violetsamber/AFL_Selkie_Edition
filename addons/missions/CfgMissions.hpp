@@ -1,8 +1,8 @@
 class CfgMissions {
     class MPMissions {
-        class Selkie_FiringRange {
-            directory = "z\afl\addons\missions\Selkie_FiringRange.Stratis";
-            briefingName = "Selkie Firing Range";
+        class AFL_FiringRange {
+            directory = "z\afl\addons\missions\AFL_FiringRange.Stratis";
+            briefingName = "AFL Firing Range";
         };
     };
 };

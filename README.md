@@ -11,9 +11,6 @@
 AFL is an Arma 3 mod that aims to add medical functionality to ACE and KAM medical systems,
 with the aim to enhance and fix both mods.
 
-This mod was created for an OPTRE ODST Arma 3 unit.
-However, it does not have any dependencies on OPTRE or any unit-specific mods and therefore can be used by anyone.
-
 ## Dependencies
 
 - [CBA](https://github.com/CBATeam/CBA_A3)
@@ -42,7 +39,7 @@ AFL includes a medical simulator interface for practicing KAT Advanced Medical.
 
 ### Firing Range Mission
 
-AFL adds `Selkie_FiringRange.Stratis`, a firing range map that includes targets, a medical simulator, and a vehicle spawner.
+AFL adds `AFL_FiringRange.Stratis`, a firing range map that includes targets, a medical simulator, and a vehicle spawner.
 
 ### Status Monitor
 

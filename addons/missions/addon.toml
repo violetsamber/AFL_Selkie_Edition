@@ -1,2 +1,2 @@
 [rapify]
-exclude = ["Selkie_FiringRange.Stratis\\description.ext"]
+exclude = ["AFL_FiringRange.Stratis\\description.ext"]
