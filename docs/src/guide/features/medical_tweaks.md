@@ -53,7 +53,7 @@ and \\(K_{BP}\\) is the blood pressure coefficient.
 
 \\(K_{BP}\\) is extrapolated from flow rate data by Kim et al.[^3] and is calculated using the following equation:
 
-\\[K_{bp} = -0.01 P_{MAP} + 1.93\\]
+\\[K_{BP} = -0.01 P_{MAP} + 1.93\\]
 
 Where \\(P_{MAP}\\) is the patient's mean arterial pressure.
 
