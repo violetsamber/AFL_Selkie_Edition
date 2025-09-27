@@ -1,10 +1,10 @@
 #include "\z\afl\addons\missions\script_component.hpp"
 
 // Initalize vehicle console
-[fr_vehicleConsole, "OPTRE_FC_Wraith_Tank", "mkrVehClose"] call EFUNC(misc,addVehicleSpawner);
-[fr_vehicleConsole, "OPTRE_FC_Wraith_Tank", "mkrVehMed"] call EFUNC(misc,addVehicleSpawner);
-[fr_vehicleConsole, "OPTRE_FC_Wraith_Tank", "mkrVehMedFar"] call EFUNC(misc,addVehicleSpawner);
-[fr_vehicleConsole, "OPTRE_FC_Wraith_Tank", "mkrVehFar"] call EFUNC(misc,addVehicleSpawner);
+[fr_vehicleConsole, "O_MBT_04_cannon_F", "mkrVehClose"] call EFUNC(misc,addVehicleSpawner);
+[fr_vehicleConsole, "O_MBT_04_cannon_F", "mkrVehMed"] call EFUNC(misc,addVehicleSpawner);
+[fr_vehicleConsole, "O_MBT_04_cannon_F", "mkrVehMedFar"] call EFUNC(misc,addVehicleSpawner);
+[fr_vehicleConsole, "O_MBT_04_cannon_F", "mkrVehFar"] call EFUNC(misc,addVehicleSpawner);
 
 // Initialize medical console
 

@@ -1,0 +1,15 @@
+/*
+ *	Author: flufflesamy
+ *	defines everything
+ *
+ */
+author			= "flufflesamy";
+onLoadName		= "AFL Firing Range";
+overviewText    = "AFL firing range. Includes a full-featured medical simulator, vehicle spawner and targets.";
+onLoadMission   = "AFL firing range. Includes a full-featured medical simulator, vehicle spawner and targets.";
+
+class Header {
+    gameType = "Coop";
+    minPlayers = 1;
+    maxPlayers = 64;
+};

@@ -7,13 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-[v0.7.2] - 2025-09-25
+## [v0.8.0] - 2025-09-27
+
+### Changed
+
+- Replaced old branding with new one.
+- Replaced logo with new logo.
+- Renamed firing range mission to `AFL_FiringRange`
+
+### Removed
+
+- Old launch presets.
+- Old logo assets.
+
+## [v0.7.2] - 2025-09-25
 
 ### Changed
 
 - Updated branding.
 
-[v0.7.1] - 2025-09-16
+## [v0.7.1] - 2025-09-16
 
 ### Added
 
@@ -388,7 +401,8 @@ of cerebral ischemia, asphyxiation, and the carotid sinus reflex.
 
 - Initial release containing medical simulator and firing range.
 
-[Unreleased]: https://github.com/flufflesamy/AFL/compare/v0.7.2...testing
+[Unreleased]: https://github.com/flufflesamy/AFL/compare/v0.8.0...testing
+[v0.8.0]: https://github.com/flufflesamy/AFL/compare/v0.7.2..v0.8.0
 [v0.7.2]: https://github.com/flufflesamy/AFL/compare/v0.7.1..v0.7.2
 [v0.7.1]: https://github.com/flufflesamy/AFL/compare/v0.7.0..v0.7.1
 [v0.7.0]: https://github.com/flufflesamy/AFL/compare/v0.6.8..v0.7.0

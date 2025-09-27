@@ -92,7 +92,7 @@
     "CHECKBOX",
     [LLSTRING(Setting_NeckTourniquet), LLSTRING(Setting_NeckTourniquet_Description)],
     [LLSTRING(Setting_Category), LLSTRING(Setting_Bandaging)],
-    [false],
+    [true],
     1
 ] call CFUNC(addSetting);
 
@@ -101,7 +101,7 @@
     "CHECKBOX",
     [LLSTRING(Setting_IV_BlockEnable), LLSTRING(Setting_IV_BlockEnable_Description)],
     [LLSTRING(Setting_Category), LLSTRING(Setting_IV)],
-    [false],
+    [true],
     1
 ] call CFUNC(addSetting);
 

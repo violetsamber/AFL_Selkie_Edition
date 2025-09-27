@@ -8,10 +8,6 @@ This folder contains items that are not part of the build process but are includ
 
 Default Arma 3 GUI control classes.
 
-### selkie_medical.png
-
-Steam Workshop logo.
-
 ### server_settings.ini
 
 Server settings for firing range mission.
