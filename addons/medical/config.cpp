@@ -27,12 +27,31 @@ class CfgPatches {
             "kat_stretcher",
             "kat_pharma"
         };
-        author = "flufflesamy";
+        author = "flufflesamy, Stellarynn";
         VERSION_CONFIG;
     };
+};
+
+class CfgAmmo {
+	class OPTRE_sticky_explosion_base;
+	class sel_supercombine_explosive: OPTRE_sticky_explosion_base
+	{
+		dangerRadiusHit = 50;
+		deflecting = -3;
+		deflectionSlowDown = 10;
+		explosionEffectsRadius = 1.5;
+		hit = 50;
+		indirectHit = 3;
+		indirectHitRange = 3;
+		craterShape = "\OPTRE_FC_Weapons\Data\plasma_crater_purple.p3d";
+		model = "\OPTRE_FC_Weapons\data\bolt_purple.p3d";
+		explosionEffects = "ImpactPlasmaExpPink";
+		CraterWaterEffects = "ImpactEffectsWaterExplosion";
+	};
 };
 
 #include "CfgFunctions.hpp"
 #include "CfgEventHandlers.hpp"
 #include "ACE_Medical_Treatment_Actions.hpp"
+#include "ACE_Medical_Injuries.hpp"
 #include "ui\gui.hpp"

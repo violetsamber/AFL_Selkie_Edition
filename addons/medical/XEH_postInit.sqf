@@ -24,3 +24,5 @@
 
 // set downgrade fluid hash
 [] call FUNC(setConsumeFluidHash);
+
+ACE_player call afl_medical_fnc_anemiaStateMachine;

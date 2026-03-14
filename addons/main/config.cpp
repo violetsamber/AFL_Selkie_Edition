@@ -11,7 +11,7 @@ class CfgPatches {
             "ace_main",
             "kat_main"
         };
-        author = "flufflesamy";
+        author = "flufflesamy, Stella";
         url = CSTRING(url);
         VERSION_CONFIG;
     };
@@ -19,14 +19,14 @@ class CfgPatches {
 
 class CfgMods {
     class PREFIX {
-        dir = "@afl";
-        name = "AFL 0.0.0";
-        picture = "A3\Ui_f\data\Logos\arma3_expansion_alpha_ca.paa";
+        dir = "@afl_selkie_edition";
+        name = "AFL Selkie Edition";
+        picture = "\z\afl\addons\main\data\selkie_medical_128.paa";
         hidePicture = "true";
         hideName = "true";
         actionName = "Website";
         action = CSTRING(URL);
-        description = "Issue Tracker: https://github.com/flufflesamy/AFL/issues";
+        description = "Issue Tracker: https://github.com/DalynSteps/AFL_Selkie_Edition/issues";
     };
 };
 

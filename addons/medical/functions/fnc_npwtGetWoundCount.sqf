@@ -30,8 +30,8 @@ private _initialOpenWounds = (GET_OPEN_WOUNDS(_patient)) getOrDefault [_bodyPart
 private _validOpenWounds = [];
 {
     _x params ["_classID", "_amountOf", "_bleeding", "_damage"];
-
-    if ((_amountOf * _bleeding) > 0) then {
+    
+    if (_amountOf * _bleeding > 0) then {
         _validOpenWounds pushBack _x;
     }
 } forEach _initialOpenWounds;

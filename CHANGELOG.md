@@ -7,6 +7,37 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v0.9.3] - 2026-03-14
+
+### Added
+- Supercombine Mechanic with AOR's blamite needles
+
+### Fixed
+- Fixed a number of undefined variable warnings and errors that were spamming logs
+
+## [v0.9.2] - 2026-03-09
+
+### Fixed
+- Fixed a NaN issue that was spamming logs
+- Properly implemented 'duty factor'
+
+## [v0.9.1] - 2026-03-07
+
+### Changed
+- Set RBC count to affect breathing effectiveness rather than just relying on 'duty factor' as a consequence 
+- Temporarily removed version checking
+
+## [v0.9.0] - 2026-03-06
+
+### Changed
+- Added Selkie imagery and branding
+
+### Added
+- Vacdress compatibility for AoR blamite and spiker wounds
+- The ability to medically check a patient's hemoglobin levels
+- Red Blood Cell Count simulation, tracking the plasma and blood levels independantly to allow for consequences in the case of over-reliance on plasma
+- RBC statemachine to track RBC Count and inflict penalties when it's no longer in balance 
+
 ## [v0.8.0] - 2025-09-27
 
 ### Changed

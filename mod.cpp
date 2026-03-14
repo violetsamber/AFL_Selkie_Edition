@@ -1,10 +1,10 @@
-name= "AFL 0.0.0";
+name= "AFL Selkie Edition 0.0.0";
 picture = "logo.paa";
 logo= "logo.paa";
 logoOver= "logo.paa";
-action= "https://flufflesamy.github.io/AFL/";
-description= "AFL 0.0.0"
-tooltip = "AFL";
-tooltipOwned = "AFL Owned";
+action= "https://github.com/DalynSteps/AFL_Selkie_Edition";
+description= "Selkie Edition of AFL medical addons"
+tooltip = "AFL SE";
+tooltipOwned = "AFL SE Owned";
 overviewPicture = "logo.paa";
-overview = "AFL contains various helpful components, including a medical simulator, a vehicle spawner, and a mission that integrates both.";
+overview = "AFL Selkie Edition contains medical expansions and helpful components, including a medical simulator, a vehicle spawner, and a mission that integrates both.";

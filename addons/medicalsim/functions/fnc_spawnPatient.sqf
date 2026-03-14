@@ -42,7 +42,7 @@ private _patientItems = [
     ["ACE_salineIV", 2]
 ];
 
-if (_simType == -1) exitWith {nil};
+//if (_simType == -1) exitWith {nil};
 
 // Delete patient if exists
 if (!isNil "_patient") then

@@ -30,8 +30,8 @@ private _enableFluidShift = KEGVAR(vitals,enableFluidShift);
 private _fluidVolume = GET_BODY_FLUID(_unit);
 _fluidVolume params ["_ECB","_ECP","_SRBC","_ISP","_fullVolume"];
 
-_ECP = (_ECP + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
-_ECB = (_ECB + (_lossVolumeChange * LITERS_TO_ML) / 2) max 100;
+_ECP = (_ECP + (_lossVolumeChange * LITERS_TO_ML) * (_ECP / _fullVolume)) max 100;
+_ECB = (_ECB + (_lossVolumeChange * LITERS_TO_ML) * (_ECB / _fullVolume)) max 100;
 
 if (!isNil {_unit getVariable [QACEGVAR(medical,ivBags),[]]}) then {
     private _bloodBags = _unit getVariable [QACEGVAR(medical,ivBags), []];
@@ -160,5 +160,7 @@ if (_enableFluidShift) then {
 };
 
 _unit setVariable [QKEGVAR(circulation,bodyFluid), [_ECB, _ECP, _SRBC, _ISP, (_ECP + _ECB)], _syncValues];
+
+_unit setVariable [QEGVAR(medical,rbcCount),( _ECB / DEFAULT_ECB * 44)];
 
 ((_lossVolumeChange + GET_BLOOD_VOLUME_LITERS(_unit)) max 0.01)

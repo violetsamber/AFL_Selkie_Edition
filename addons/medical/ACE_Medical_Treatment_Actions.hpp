@@ -3,6 +3,7 @@ class ACE_Medical_Treatment_Actions {
     class Carbonate;
     class FieldDressing;
     class CheckFracture;
+	class CheckPulse;
 
     class ApplyNeckTourniquet: BasicBandage {
         displayName = ACECSTRING(medical_treatment,Apply_Tourniquet);
@@ -25,6 +26,18 @@ class ACE_Medical_Treatment_Actions {
         callbackSuccess = QACEFUNC(medical_treatment,tourniquetRemove);
         allowedUnderwater = 1;
     };
+
+	class CheckHemoglobin: CheckPulse {
+		displayName = "Check Hemoglobin Levels";
+        displayNameProgress = "Checking Hemoglobin Levels";
+        animationMedicProne = "";
+        animationMedicSelfProne = "";
+		allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+        callbackSuccess = QFUNC(checkHemoglobin);
+        animationPatient = "";
+        animationPatientUnconscious = "AinjPpneMstpSnonWrflDnon_rolltoback";
+        animationPatientUnconsciousExcludeOn[] = {"ainjppnemstpsnonwrfldnon", "kat_recoveryposition"};
+	};
 
     // Make KAM inspect cathether and saline flush respect med level settings
     class Inspect : Carbonate {

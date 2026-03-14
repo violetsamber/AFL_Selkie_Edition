@@ -40,7 +40,7 @@ private _arrestType = 0;
 switch (true) do {
     case (_circulation_arrestType == 0): {};
     case (_circulation_arrestType >= 1): {
-        _arrestType = _arrest;
+        _arrestType = _circulation_arrestType;
     };
     case (_circulation_arrestType < 1): {
         if (_circulation_arrestType >= random 1) then {
@@ -92,7 +92,7 @@ private _patient = _stretcher call FUNC(spawnPatient);
 if (isNil "_patient") exitWith {ERROR_1("Patient %1 cannot be nil",_patient)};
 
 // Set wounds
-if (count _woundsArray > 0) then {
+if (_woundsArray isNotEqualTo []) then {
     [_patient, _woundsArray] call FUNC(setWounds);
 };
 

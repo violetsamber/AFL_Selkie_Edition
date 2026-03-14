@@ -19,4 +19,13 @@ class CfgFunctions {
             };
         };
     };
+	class Overwrite_Vitals {
+		tag = "kat_vitals";
+
+		class kat_vitals {
+			class handleOxygenFunction {
+				file = QPATHTOF(functions\fnc_handleOxygenFunction.sqf);
+			};
+		};
+	};
 };

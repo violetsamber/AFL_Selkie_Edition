@@ -19,7 +19,7 @@
 */
 
 params["_unit", "_occluded", "_obstructed", "_pao2"];
-TRACE_4("setAirway",_unit,_occluded,_obstructed,_spo2);
+TRACE_4("setAirway",_unit,_occluded,_obstructed,_pao2);
 
 _unit setVariable [QKEGVAR(airway,occluded), _occluded, true];
 _unit setVariable [QKEGVAR(airway,obstruction), _obstructed, true];

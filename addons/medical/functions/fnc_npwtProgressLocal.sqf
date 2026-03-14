@@ -34,8 +34,7 @@ switch (true) do {
     // Patient has bleeding open wound
     case (_isBleeding): {
         // Bandage first wound
-        private _bandagedWound = [];
-        _bandagedWound = [_patient, _bodyPart] call FUNC(npwtBandageWound);
+        private _bandagedWound = [_patient, _bodyPart] call FUNC(npwtBandageWound);
         if (_bandagedWound isEqualTo [] || isNil "_bandagedWound") exitWith {
             ERROR_1("npwtProgressLocal: NPWT cannot bandage wound. Target Wound=%1",_this);
         };
@@ -62,12 +61,12 @@ switch (true) do {
         private _success = false;
         _success = [_patient, _bodyPart, _targetWound] call FUNC(npwtStitchWound);
         if (!_success || isNil("_success")) exitWith {
-            ERROR_2("npwtProgressLocal: NPWT cannot stitch wound. Target Wound=%1, Wounds=%2",_bandagedWound,_bandagedWoundsOnPart);
+            ERROR_2("npwtProgressLocal: NPWT cannot stitch wound. Target Wound=%1, Wounds=%2",_targetWound,_bandagedWoundsOnPart);
         };
 
         TRACE_1("Stitched Wound",_success);
 
-        INFO_3("npwtProgressLocal: Treated bandaged wound. Params=%1, Target Wound=%2, Stitched=%3",_this,_bandagedWound,_success);
+        INFO_3("npwtProgressLocal: Treated bandaged wound. Params=%1, Target Wound=%2, Stitched=%3",_this,_targetWound,_success);
     };
     default {
         if (true) exitWith {

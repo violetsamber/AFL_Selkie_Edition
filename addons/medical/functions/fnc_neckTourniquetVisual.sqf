@@ -17,6 +17,6 @@
 params ["_enable"];
 TRACE_1("neckTourniquetVisual",_enable);
 
-if (!_isLocal)  exitWith {ERROR_1("%1 not Local!",_this)};
+if (!isLocal)  exitWith {ERROR_1("%1 not Local!",_this)};
 
 [_enable, 1] call KEFUNC(feedback,effectLowSpO2);

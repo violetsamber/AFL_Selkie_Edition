@@ -2,7 +2,7 @@
 <Project name="AFL">
     <Package name="Main">
         <Key ID="STR_AFL_Main_URL">
-            <English>https://github.com/flufflesamy/AFL</English>
+            <English>https://github.com/DalynSteps/AFL_Selkie_Edition</English>
         </Key>
     </Package>
 </Project>

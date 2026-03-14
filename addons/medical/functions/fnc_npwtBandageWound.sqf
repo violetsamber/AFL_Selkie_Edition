@@ -30,8 +30,8 @@ private _bandagedWounds = GET_BANDAGED_WOUNDS(_patient);
 private _bandagedWoundsOnPart = _bandagedWounds getOrDefault [_bodyPart, []];
 
 private _targetWoundIndex = _openWoundsOnPart findIf {
-    _x params ["", "_amountOf", "_bleeding"];
-    (_amountOf * _bleeding) > 0;
+    _x params ["_woundClassID", "_amountOf", "_bleeding"];
+    (_amountOf * _bleeding > 0)
 };
 
 // Bleeding wound check

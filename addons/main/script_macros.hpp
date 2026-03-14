@@ -40,6 +40,22 @@
 #define ARREST_TYPE ["none", "asystole", "pea", "vf", "vt"]
 #define CHANCE_TO_BOOL(val) val >= random 1
 
+#define BASE_OXYGEN_USE -0.25
+
+#define DEFAULT_RBC_COUNT 44
+#define VAR_RBC_COUNT QEGVAR(medical,rbcCount)
+#define GET_RBC_COUNT(unit) (unit getVariable [VAR_RBC_COUNT, DEFAULT_RBC_COUNT])
+
+#define DEFAULT_BREATHING_EFFECTIVENESS 1
+#define VAR_BREATHING_EFFECTIVENESS QEGVAR(medical,breathingEffectiveness)
+#define GET_BREATHING_EFFECTIVENESS(unit) (unit getVariable [VAR_BREATHING_EFFECTIVENESS, DEFAULT_BREATHING_EFFECTIVENESS])
+
+#define DEFAULT_BLAMITE_IMPALED 0
+#define VAR_BLAMITE_IMPALED QEGVAR(medical,blamiteImpaled)
+#define GET_BLAMITE_IMPALED(unit) (unit getVariable [VAR_BLAMITE_IMPALED, DEFAULT_BLAMITE_IMPALED])
+
+#define LAST_ANEMIA_UPDATE QEGVAR(medical,lastAnemiaUpdate)
+
 // CBA macros
 #define CBA_PREFIX cba
 #define CBA_ADDON(component) DOUBLES(CBA_PREFIX,component)

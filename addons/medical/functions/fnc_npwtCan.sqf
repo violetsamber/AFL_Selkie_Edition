@@ -30,6 +30,17 @@ private _check = {
     // True if patient is bleeding, or has trauma, or has bruises
     private _canNPWT = _isBleeding || _bodyPartDamageOnPart > 0 || _openWoundsOnPart isNotEqualTo [];
 
+    {
+        _x params ["_woundClassID", "_amountOf", "_bleeding"];
+
+        private _classIndex = _woundClassID / 10;
+        private _className = ACEGVAR(medical_damage,woundClassNames) select _classIndex;
+
+        if (_className == "AOR_BlamiteWound" || _className == "AOR_SpikeWound") exitWith {
+            _canNPWT = false;
+        };
+    } forEach (GET_OPEN_WOUNDS(_patient) getOrDefault [_bodyPart, []]);
+
     _canNPWT;
 };
 

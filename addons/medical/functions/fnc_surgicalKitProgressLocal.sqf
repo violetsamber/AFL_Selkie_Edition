@@ -35,10 +35,10 @@ private _targetWound = _bandagedWoundsOnPart select 0;
 private _success = false;
 _success = [_patient, _bodyPart, _targetWound] call FUNC(npwtStitchWound);
 if (!_success || isNil("_success")) exitWith {
-    ERROR_2("surgicalKitProgressLocal: Cannot stitch wound. Target Wound=%1, Wounds=%2",_bandagedWound,_bandagedWoundsOnPart);
+    ERROR_2("surgicalKitProgressLocal: Cannot stitch wound. Target Wound=%1, Wounds=%2",_targetWound,_bandagedWoundsOnPart);
 };
 
-INFO_3("surgicalKitProgressLocal: Treated bandaged wound. Params=%1, Target Wound=%2, Stitched=%3",_this,_bandagedWound,_success);
+INFO_3("surgicalKitProgressLocal: Treated bandaged wound. Params=%1, Target Wound=%2, Stitched=%3",_this,_targetWound,_success);
 
 // Clear condition caches
 private _nearPlayers = (_patient nearEntities ["CAManBase", 6]) select {_x call ACEFUNC(common,isPlayer)};

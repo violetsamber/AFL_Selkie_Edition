@@ -37,14 +37,14 @@ if (!isNull _veh) then
 _veh = createVehicle[_vehName, _pos, [], 0, "CAN_COLLIDE"];
 _veh setVariable ["BIS_enableRandomization", false];
 
+// sets variable in console for name of marker
+_entity setVariable [_mkrVarName, _veh, true];
+
 if (_caller == player) then
 {
 	hint format ["Spawned %1 at %2.", _vehName, _markerName];
 };
 
-
-// sets variable in console for name of marker
-_entity setVariable [_mkrVarName, _veh, true];
 
 private _id = [_veh, "Dammaged", {
 	params ["_unit", "_hitSelection", "_damage", "_hitPartIndex", "_hitPoint", "_shooter", "_projectile"];
@@ -64,8 +64,8 @@ private _id = [_veh, "Dammaged", {
 		};
 
 		[{
-			params ["_unit", "_thisID", "_mkrVarName"];
-			deleteVehicle _unit select 0;
+			params ["_unit", "_thisID", "_mkrVarName", "_entity"];
+			deleteVehicle _unit;
 			_entity setVariable [_mkrVarName, nil, true];
 			_unit removeEventHandler ["Dammaged", _thisID];
 		}, [_unit, _thisID, _mkrVarName, _entity], 5] call CFUNC(waitAndExecute);
