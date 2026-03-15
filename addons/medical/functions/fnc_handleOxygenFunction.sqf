@@ -117,7 +117,7 @@ private _fio2 = switch (true) do {
 private _pALVo2 = ((_fio2 * (_baroPressure - 47)) - (_paco2 / _anerobicPressure)) max 1;
 
 // PaO2 comes from ventilation shortage multipled by RBC volume
-private _pao2 = ((_previousCyclePao2 * GET_BREATHING_EFFECTIVENESS(_unit) - (DEFAULT_ECB / (GET_BODY_FLUID(_unit) select 0)) * ((_demandVentilation - _actualVentilation) / 120)));
+private _pao2 = ((_previousCyclePao2 - (DEFAULT_ECB / (GET_BODY_FLUID(_unit) select 0)) * ((_demandVentilation - _actualVentilation) / 120)));
 
 /* private _string = format["paO2: %1",_pao2];
 INFO(_string); */
