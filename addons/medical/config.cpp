@@ -33,6 +33,7 @@ class CfgPatches {
 };
 
 class CfgAmmo {
+	class CA_Magazine;
 	class OPTRE_sticky_explosion_base;
 	class sel_supercombine_explosive: OPTRE_sticky_explosion_base
 	{
@@ -48,6 +49,21 @@ class CfgAmmo {
 		explosionEffects = "ImpactPlasmaExpPink";
 		CraterWaterEffects = "ImpactEffectsWaterExplosion";
 	};
+
+
+	class kat_Pervitin: CA_Magazine {
+        scope = 0;
+		scopeArsenal = 0;
+        displayName = "";
+        descriptionShort = "";
+        model = "";
+        picture = "";
+        ammo = "";
+        count = 0;
+        mass = 10000;
+        ACE_isMedicalItem = 0;
+        ACE_asItem = 0;
+    };
 };
 
 #include "CfgFunctions.hpp"
