@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v0.9.6] - 07/04/2025
+
+### Fixed
+ - Log spam fix FOR REAL THIS TIME I THINK
+
+## [v0.9.5] - 31/03/2025
+
+### Fixed
+ - Log spam fix 
+ - Reenabled version checking
+
+## [v0.9.4] - 24/03/2025
+
+### Changed
+ - Decreased the amount of blamite required for a supercombine from 13 to 10
+
+### Removed
+ - Pervitin has been erased where possible, to remove references to the Nazi medication
+
 ## [v0.9.3] - 2026-03-14
 
 ### Added

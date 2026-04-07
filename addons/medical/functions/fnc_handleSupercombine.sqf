@@ -60,7 +60,7 @@ private _blamiteTotal = 0;
 
 
 
-if (_blamiteTotal > 13) then {
+if (_blamiteTotal > 10) then {
 	private _wounds = GET_OPEN_WOUNDS(_unit);
 	{
 		private _part = _wounds get _x;

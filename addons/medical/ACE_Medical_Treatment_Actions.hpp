@@ -4,6 +4,7 @@ class ACE_Medical_Treatment_Actions {
     class FieldDressing;
     class CheckFracture;
 	class CheckPulse;
+	class Morphine;
 
     class ApplyNeckTourniquet: BasicBandage {
         displayName = ACECSTRING(medical_treatment,Apply_Tourniquet);
@@ -95,5 +96,13 @@ class ACE_Medical_Treatment_Actions {
     class ResetSurgery: CheckFracture {
         items[] = {"ACE_surgicalKit"};
         consumeItem = 0;
+    };
+
+	class Pervitin: Morphine {
+        displayName = "";
+        displayNameProgress = "";
+        allowedSelections[] = {""};
+        allowSelfTreatment = 0;
+        callbackSuccess = "";
     };
 };
