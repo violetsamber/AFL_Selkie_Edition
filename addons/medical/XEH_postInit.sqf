@@ -1,5 +1,7 @@
 #include "script_component.hpp"
 
+#include "initKeybinds.inc.sqf"
+
 // Register Events
 [QGVAR(neckTourniquetLocal), LINKFUNC(neckTourniquetLocal)] call CFUNC(addEventHandler);
 [QGVAR(neckTourniquetLocal), LINKFUNC(neckTourniquetEffects)] call CFUNC(addEventHandler);
