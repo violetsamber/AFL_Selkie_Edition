@@ -105,4 +105,8 @@ class ACE_Medical_Treatment_Actions {
         allowSelfTreatment = 0;
         callbackSuccess = "";
     };
+
+    class Reorientation : Carbonate {
+        category = "examine";
+    };
 };
